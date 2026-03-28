@@ -102,7 +102,7 @@ Check the [`examples/`](examples/) directory for complete generated outputs:
 | [Restaurant](examples/restaurant/) | [plan.md](examples/restaurant/plan.md) | [landing.html](examples/restaurant/landing.html) |
 | [Education](examples/education/) | [plan.md](examples/education/plan.md) | [landing.html](examples/education/landing.html) |
 
-## 26 Built-In Industries
+## 25 Built-In Industries
 
 <details>
 <summary>Click to expand full list with market data</summary>
@@ -134,7 +134,6 @@ Check the [`examples/`](examples/) directory for complete generated outputs:
 | Church/Ministry | $1.1B | 5.4% | Member engagement, donations |
 | E-Commerce | $18.7B | 17.3% | Inventory sync, multi-channel |
 | Home Services | $3.8B | 11.1% | Dispatching, customer management |
-| Insurance Agency | $3.5B | 8.5% | Commission tracking, renewal leakage |
 
 </details>
 
@@ -148,7 +147,7 @@ Check the [`examples/`](examples/) directory for complete generated outputs:
 | Offline | **Yes** | No | No | No |
 | Landing Page | **Generated** | No | No | No |
 | Deploy Guide | **Included** | No | No | No |
-| Industry Data | **26 verticals** | Generic | Generic | Generic |
+| Industry Data | **25 verticals** | Generic | Generic | Generic |
 | Tech Stack | **Specific** | Vague | No | No |
 | Competitive Matrix | **Auto** | Manual | Partial | No |
 | Feature Roadmap | **Phased** | Unstructured | Basic | No |
@@ -250,7 +249,7 @@ const verticals = listVerticals();   // [{name, market, cagr, pain, competitors}
 
 No API keys. No accounts. No network requests. No build step.
 
-Everything runs locally using a curated knowledge base of 26 industry verticals with real market data (TAM, CAGR, competitors, pain points). Your data never leaves your machine.
+Everything runs locally using a curated knowledge base of 25 industry verticals with real market data (TAM, CAGR, competitors, pain points). Your data never leaves your machine.
 
 ## Contributing
 
