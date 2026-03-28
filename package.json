@@ -1,6 +1,6 @@
 {
   "name": "ai-saas-gen",
-  "version": "1.0.0",
+  "version": "2.2.0",
   "description": "Generate a complete vertical SaaS business plan from a niche description. Includes features, pricing, tech stack, competitive analysis, landing page HTML, and deployment guide.",
   "main": "src/index.js",
   "bin": {
