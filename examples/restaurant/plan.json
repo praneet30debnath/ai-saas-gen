@@ -1,0 +1,260 @@
+{
+  "business": {
+    "name": "Pulsebase",
+    "niche": "restaurant",
+    "tam": "$7.2B",
+    "cagr": "15.3%",
+    "pain": "Order management, inventory waste, staff scheduling conflicts",
+    "competitors": [
+      "Toast",
+      "Square for Restaurants",
+      "Lightspeed"
+    ],
+    "region": "global",
+    "budget": "seed",
+    "audience": "Small to medium businesses in restaurant",
+    "positioning": "Pulsebase is the modern, AI-powered restaurant management platform that eliminates order management and helps businesses save 10+ hours per week.",
+    "moat": [
+      "Vertical-specific AI trained on restaurant data patterns",
+      "All-in-one platform reduces tool sprawl (replaces 3-5 tools)",
+      "Mobile-first design for on-the-go restaurant professionals",
+      "Privacy-first: data never sold, GDPR/CCPA compliant"
+    ],
+    "revenueStreams": [
+      {
+        "stream": "SaaS Subscriptions",
+        "pct": "70%",
+        "desc": "Monthly/annual recurring revenue"
+      },
+      {
+        "stream": "Transaction Fees",
+        "pct": "15%",
+        "desc": "Small % on payments processed"
+      },
+      {
+        "stream": "API Access",
+        "pct": "10%",
+        "desc": "Usage-based API for integrations"
+      },
+      {
+        "stream": "Marketplace",
+        "pct": "5%",
+        "desc": "Third-party plugin/integration fees"
+      }
+    ],
+    "kpis": {
+      "targetMRR": "$50K",
+      "targetUsers": "2,000",
+      "churnTarget": "< 5% monthly",
+      "ltv": "$1,200",
+      "cac": "$120"
+    }
+  },
+  "features": [
+    {
+      "name": "POS System",
+      "desc": "Touchscreen point-of-sale with order management",
+      "priority": "must",
+      "phase": 1,
+      "effort": 5,
+      "key": "pos-system"
+    },
+    {
+      "name": "Online Ordering",
+      "desc": "Branded web/app ordering with delivery integration",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "online-ordering"
+    },
+    {
+      "name": "Table Management",
+      "desc": "Floor plan editor with real-time table status",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "table-management"
+    },
+    {
+      "name": "Inventory Tracking",
+      "desc": "Real-time stock levels with auto-reorder alerts",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "inventory-tracking"
+    },
+    {
+      "name": "Staff Scheduling",
+      "desc": "Shift management with availability and swap requests",
+      "priority": "should",
+      "phase": 1,
+      "effort": 3,
+      "key": "staff-scheduling"
+    },
+    {
+      "name": "Menu Builder",
+      "desc": "Visual menu editor with pricing, photos, and modifiers",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "menu-builder"
+    },
+    {
+      "name": "Analytics Dashboard",
+      "desc": "Revenue, orders, and operational KPIs at a glance",
+      "priority": "should",
+      "phase": 2,
+      "effort": 3,
+      "key": "analytics-dashboard"
+    }
+  ],
+  "techStack": {
+    "frontend": "Next.js + Tailwind CSS",
+    "backend": "Node.js + Express",
+    "db": "PostgreSQL (Supabase)",
+    "hosting": "Vercel / Railway",
+    "auth": "NextAuth.js",
+    "payments": "Stripe",
+    "extras": [
+      "Redis (cache)",
+      "Resend (email)",
+      "S3 (storage)"
+    ]
+  },
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "$0",
+      "period": "/forever",
+      "features": [
+        "Up to 100 records",
+        "Core features",
+        "Email support",
+        "2 users"
+      ],
+      "cta": "Start Free"
+    },
+    {
+      "name": "Professional",
+      "price": "$49",
+      "period": "/month",
+      "features": [
+        "Up to 5,000 records",
+        "All features",
+        "Priority support",
+        "10 users",
+        "API access",
+        "Integrations"
+      ],
+      "cta": "Start Free Trial",
+      "highlighted": true
+    },
+    {
+      "name": "Business",
+      "price": "$149",
+      "period": "/month",
+      "features": [
+        "Unlimited records",
+        "All features",
+        "Phone support",
+        "Unlimited users",
+        "SSO",
+        "Custom reports"
+      ],
+      "cta": "Start Free Trial"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "features": [
+        "Everything in Business",
+        "Dedicated support",
+        "SLA guarantee",
+        "On-premise option",
+        "Custom integrations"
+      ],
+      "cta": "Contact Sales"
+    }
+  ],
+  "competitive": {
+    "competitors": [
+      "Toast",
+      "Square for Restaurants",
+      "Lightspeed",
+      "Pulsebase"
+    ],
+    "rows": [
+      {
+        "feature": "POS System",
+        "Toast": "partial",
+        "Square for Restaurants": "no",
+        "Lightspeed": "no",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "Online Ordering",
+        "Toast": "partial",
+        "Square for Restaurants": "partial",
+        "Lightspeed": "full",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "Table Management",
+        "Toast": "partial",
+        "Square for Restaurants": "full",
+        "Lightspeed": "full",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "Inventory Tracking",
+        "Toast": "full",
+        "Square for Restaurants": "no",
+        "Lightspeed": "no",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "Staff Scheduling",
+        "Toast": "partial",
+        "Square for Restaurants": "full",
+        "Lightspeed": "no",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "Menu Builder",
+        "Toast": "no",
+        "Square for Restaurants": "no",
+        "Lightspeed": "partial",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "AI-Powered Insights",
+        "Toast": "no",
+        "Square for Restaurants": "partial",
+        "Lightspeed": "no",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "No-Code Customization",
+        "Toast": "no",
+        "Square for Restaurants": "no",
+        "Lightspeed": "partial",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "Privacy-First (No Data Selling)",
+        "Toast": "partial",
+        "Square for Restaurants": "no",
+        "Lightspeed": "no",
+        "Pulsebase": "full"
+      },
+      {
+        "feature": "Mobile-First UX",
+        "Toast": "partial",
+        "Square for Restaurants": "no",
+        "Lightspeed": "partial",
+        "Pulsebase": "full"
+      }
+    ]
+  }
+}

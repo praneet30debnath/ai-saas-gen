@@ -1,0 +1,260 @@
+{
+  "business": {
+    "name": "Novahub",
+    "niche": "education",
+    "tam": "$21.6B",
+    "cagr": "18.2%",
+    "pain": "Student engagement, progress tracking, administrative overhead",
+    "competitors": [
+      "Canvas",
+      "Teachable",
+      "Thinkific"
+    ],
+    "region": "global",
+    "budget": "seed",
+    "audience": "Small to medium businesses in education",
+    "positioning": "Novahub is the modern, AI-powered education management platform that eliminates student engagement and helps businesses save 10+ hours per week.",
+    "moat": [
+      "Vertical-specific AI trained on education data patterns",
+      "All-in-one platform reduces tool sprawl (replaces 3-5 tools)",
+      "Mobile-first design for on-the-go education professionals",
+      "Privacy-first: data never sold, GDPR/CCPA compliant"
+    ],
+    "revenueStreams": [
+      {
+        "stream": "SaaS Subscriptions",
+        "pct": "70%",
+        "desc": "Monthly/annual recurring revenue"
+      },
+      {
+        "stream": "Transaction Fees",
+        "pct": "15%",
+        "desc": "Small % on payments processed"
+      },
+      {
+        "stream": "API Access",
+        "pct": "10%",
+        "desc": "Usage-based API for integrations"
+      },
+      {
+        "stream": "Marketplace",
+        "pct": "5%",
+        "desc": "Third-party plugin/integration fees"
+      }
+    ],
+    "kpis": {
+      "targetMRR": "$50K",
+      "targetUsers": "2,000",
+      "churnTarget": "< 5% monthly",
+      "ltv": "$1,200",
+      "cac": "$120"
+    }
+  },
+  "features": [
+    {
+      "name": "Course Builder",
+      "desc": "Drag-and-drop curriculum with modules and lessons",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "course-builder"
+    },
+    {
+      "name": "Student Portal",
+      "desc": "Personalized dashboard with progress and assignments",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "student-portal"
+    },
+    {
+      "name": "Progress Tracking",
+      "desc": "Learning analytics with completion rates and scores",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "progress-tracking"
+    },
+    {
+      "name": "Video Hosting",
+      "desc": "Built-in video player with DRM protection",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "video-hosting"
+    },
+    {
+      "name": "Quizzes & Assessments",
+      "desc": "Multiple question types with auto-grading",
+      "priority": "should",
+      "phase": 1,
+      "effort": 3,
+      "key": "quizzes-assessments"
+    },
+    {
+      "name": "Certificates",
+      "desc": "Custom completion certificates with verification",
+      "priority": "should",
+      "phase": 2,
+      "effort": 2,
+      "key": "certificates"
+    },
+    {
+      "name": "Payment & Subscriptions",
+      "desc": "Course sales, bundles, and recurring subscriptions",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "payment-subscriptions"
+    }
+  ],
+  "techStack": {
+    "frontend": "Next.js + Tailwind CSS",
+    "backend": "Node.js + Express",
+    "db": "PostgreSQL (Supabase)",
+    "hosting": "Vercel / Railway",
+    "auth": "NextAuth.js",
+    "payments": "Stripe",
+    "extras": [
+      "Redis (cache)",
+      "Resend (email)",
+      "S3 (storage)"
+    ]
+  },
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "$0",
+      "period": "/forever",
+      "features": [
+        "Up to 100 records",
+        "Core features",
+        "Email support",
+        "2 users"
+      ],
+      "cta": "Start Free"
+    },
+    {
+      "name": "Professional",
+      "price": "$49",
+      "period": "/month",
+      "features": [
+        "Up to 5,000 records",
+        "All features",
+        "Priority support",
+        "10 users",
+        "API access",
+        "Integrations"
+      ],
+      "cta": "Start Free Trial",
+      "highlighted": true
+    },
+    {
+      "name": "Business",
+      "price": "$149",
+      "period": "/month",
+      "features": [
+        "Unlimited records",
+        "All features",
+        "Phone support",
+        "Unlimited users",
+        "SSO",
+        "Custom reports"
+      ],
+      "cta": "Start Free Trial"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "features": [
+        "Everything in Business",
+        "Dedicated support",
+        "SLA guarantee",
+        "On-premise option",
+        "Custom integrations"
+      ],
+      "cta": "Contact Sales"
+    }
+  ],
+  "competitive": {
+    "competitors": [
+      "Canvas",
+      "Teachable",
+      "Thinkific",
+      "Novahub"
+    ],
+    "rows": [
+      {
+        "feature": "Course Builder",
+        "Canvas": "no",
+        "Teachable": "full",
+        "Thinkific": "full",
+        "Novahub": "full"
+      },
+      {
+        "feature": "Student Portal",
+        "Canvas": "partial",
+        "Teachable": "partial",
+        "Thinkific": "full",
+        "Novahub": "full"
+      },
+      {
+        "feature": "Progress Tracking",
+        "Canvas": "no",
+        "Teachable": "no",
+        "Thinkific": "partial",
+        "Novahub": "full"
+      },
+      {
+        "feature": "Video Hosting",
+        "Canvas": "partial",
+        "Teachable": "full",
+        "Thinkific": "no",
+        "Novahub": "full"
+      },
+      {
+        "feature": "Quizzes & Assessments",
+        "Canvas": "partial",
+        "Teachable": "full",
+        "Thinkific": "no",
+        "Novahub": "full"
+      },
+      {
+        "feature": "Certificates",
+        "Canvas": "no",
+        "Teachable": "no",
+        "Thinkific": "full",
+        "Novahub": "full"
+      },
+      {
+        "feature": "AI-Powered Insights",
+        "Canvas": "no",
+        "Teachable": "partial",
+        "Thinkific": "no",
+        "Novahub": "full"
+      },
+      {
+        "feature": "No-Code Customization",
+        "Canvas": "no",
+        "Teachable": "no",
+        "Thinkific": "no",
+        "Novahub": "full"
+      },
+      {
+        "feature": "Privacy-First (No Data Selling)",
+        "Canvas": "no",
+        "Teachable": "no",
+        "Thinkific": "partial",
+        "Novahub": "full"
+      },
+      {
+        "feature": "Mobile-First UX",
+        "Canvas": "no",
+        "Teachable": "no",
+        "Thinkific": "no",
+        "Novahub": "full"
+      }
+    ]
+  }
+}

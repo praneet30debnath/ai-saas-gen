@@ -96,6 +96,9 @@ Check the [`examples/`](examples/) directory for complete generated outputs:
 | [Pet Grooming](examples/pet-grooming/) | [plan.md](examples/pet-grooming/plan.md) | [landing.html](examples/pet-grooming/landing.html) |
 | [Fitness](examples/fitness/) | [plan.md](examples/fitness/plan.md) | [landing.html](examples/fitness/landing.html) |
 | [Real Estate](examples/real-estate/) | [plan.md](examples/real-estate/plan.md) | [landing.html](examples/real-estate/landing.html) |
+| [Healthcare](examples/healthcare/) | [plan.md](examples/healthcare/plan.md) | [landing.html](examples/healthcare/landing.html) |
+| [Restaurant](examples/restaurant/) | [plan.md](examples/restaurant/plan.md) | [landing.html](examples/restaurant/landing.html) |
+| [Education](examples/education/) | [plan.md](examples/education/plan.md) | [landing.html](examples/education/landing.html) |
 
 ## 25 Built-In Industries
 

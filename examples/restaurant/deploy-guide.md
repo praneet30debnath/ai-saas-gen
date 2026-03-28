@@ -1,0 +1,21 @@
+# Deploy Pulsebase — Seed Guide
+
+## 1. Project Setup
+```bash
+npx create-next-app@latest pulsebase-app --typescript --tailwind --app
+cd pulsebase-app
+npm install @supabase/supabase-js stripe next-auth
+```
+
+## 2. Database (Supabase)
+```bash
+npx supabase init
+npx supabase db push
+```
+
+## 3. Deploy to Vercel
+```bash
+npx vercel --prod
+```
+
+Estimated Monthly Cost: ~$50/month + transaction fees
