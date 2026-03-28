@@ -1,12 +1,10 @@
-<![CDATA[<p align="center">
+<p align="center">
   <h1 align="center">ai-saas-gen</h1>
   <p align="center"><strong>Generate a complete vertical SaaS business plan in seconds. No API keys. No signup. Runs locally.</strong></p>
 </p>
 
 <p align="center">
-  <a href="https://github.com/kurtnebiev-elvis4/ai-saas-gen/actions/workflows/ci.yml"><img src="https://github.com/kurtnebiev-elvis4/ai-saas-gen/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/kurtnebiev-elvis4/ai-saas-gen/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
-  <a href="https://github.com/kurtnebiev-elvis4/ai-saas-gen"><img src="https://img.shields.io/github/stars/kurtnebiev-elvis4/ai-saas-gen?style=social" alt="GitHub Stars"></a>
   <a href="https://github.com/kurtnebiev-elvis4/ai-saas-gen"><img src="https://img.shields.io/badge/node-%3E%3D16-brightgreen.svg" alt="Node >= 16"></a>
   <a href="https://github.com/kurtnebiev-elvis4/ai-saas-gen"><img src="https://img.shields.io/badge/dependencies-0-success.svg" alt="Zero Dependencies"></a>
   <a href="https://tool-factory-prod.web.app/saas-generator/"><img src="https://img.shields.io/badge/demo-live-ff69b4.svg" alt="Live Demo"></a>
@@ -36,6 +34,23 @@ From a single niche input, you get a **complete SaaS business plan**:
 | **Landing Page** | Ready-to-deploy HTML landing page |
 | **Deploy Guide** | Step-by-step deployment instructions |
 | **Markdown Report** | Complete business plan as a shareable document |
+
+### Web Version Extras
+
+The [live web version](https://tool-factory-prod.web.app/saas-generator/) adds interactive features on top of the CLI:
+
+| Feature | Description |
+|---------|-------------|
+| **SWOT Analysis** | Color-coded Strengths, Weaknesses, Opportunities, Threats grid |
+| **Risk Assessment** | 7-factor risk matrix with severity levels and mitigation strategies |
+| **Strategic Recommendations** | Short/medium/long-term actionable guidance |
+| **Executive Summary** | Investor-ready one-paragraph summary with key metrics |
+| **PDF Export** | One-click export to PDF via print stylesheet (free, zero dependencies) |
+| **Financial Projections** | 24-month MRR, revenue, and customer forecasts |
+| **Pitch Deck** | Downloadable HTML pitch deck |
+| **90-Day Roadmap** | Sprint-by-sprint execution plan |
+
+**11 tabs total:** Overview, Features, SWOT & Risks, Pitch Deck, 90-Day Roadmap, Tech Stack, Pricing, Competitive, Financials, Landing Page, Deploy Guide
 
 ## Demo
 
@@ -147,6 +162,9 @@ Check the [`examples/`](examples/) directory for complete generated outputs:
 | Price | **Free** | $20/mo | $29/mo | $20/mo |
 | Offline | **Yes** | No | No | No |
 | Landing Page | **Generated** | No | No | No |
+| SWOT Analysis | **Auto** | Manual | No | Basic |
+| Risk Assessment | **7 factors** | No | No | No |
+| PDF Export | **Free** | No | $29/mo | $20/mo |
 | Deploy Guide | **Included** | No | No | No |
 | Industry Data | **26 verticals** | Generic | Generic | Generic |
 | Tech Stack | **Specific** | Vague | No | No |
@@ -196,7 +214,7 @@ my-logistics-saas/
 ### Options
 
 | Flag | Description | Default |
-|------|-------------|---------|
+|------|-------------|--------|
 | `-b, --budget` | Budget tier: `bootstrap`, `seed`, `funded`, `enterprise` | `seed` |
 | `-a, --audience` | Target audience | Auto-detected |
 | `-p, --problem` | Key problem to solve | Auto-detected |
@@ -254,9 +272,13 @@ Everything runs locally using a curated knowledge base of 26 industry verticals 
 
 ## Contributing
 
-PRs welcome! The easiest way to contribute is adding a new industry vertical. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+PRs welcome! To add a new industry vertical:
+
+1. Fork the repo
+2. Add your vertical data to `src/data.js`
+3. Include: market size, CAGR, pain points, competitors, features
+4. Submit a PR
 
 ## License
 
 MIT
-]]>
