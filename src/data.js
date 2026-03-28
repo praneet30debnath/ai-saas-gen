@@ -29,6 +29,7 @@ const VERTICALS = {
   "church": { market: "$1.1B", cagr: "7.3%", pain: "Member engagement, donation tracking, event coordination", competitors: ["Planning Center", "Breeze", "Pushpay"], features: ["donor-management", "event-management", "volunteer-scheduling", "email-campaigns", "check-in-app", "reporting", "online-booking"], keywords: ["church management software", "church giving", "ministry tools"] },
   "ecommerce": { market: "$25.6B", cagr: "16.8%", pain: "Inventory sync across channels, customer retention, fulfillment complexity", competitors: ["Shopify", "BigCommerce", "WooCommerce"], features: ["inventory-management", "online-ordering", "payment-processing", "analytics-dashboard", "email-campaigns", "crm", "marketplace"], keywords: ["ecommerce platform", "online store builder", "shopping cart software"] },
   "home services": { market: "$3.8B", cagr: "10.1%", pain: "Dispatching, customer communication, seasonal demand fluctuation", competitors: ["ServiceTitan", "Housecall Pro", "Jobber"], features: ["appointment-scheduling", "route-optimization", "invoicing", "customer-messaging", "staff-scheduling", "crm", "analytics-dashboard"], keywords: ["hvac software", "plumbing management", "field service management"] },
+  "insurance agency": { market: "$3.5B", cagr: "8.5%", pain: "Manual commission calculations, renewal pipeline falling through cracks, E&O compliance gaps", competitors: ["Applied Epic", "EZLynx", "HawkSoft"], features: ["policy-management", "commission-tracking", "renewal-automation", "carrier-integration", "eo-compliance", "producer-licensing", "document-vault"], keywords: ["insurance agency management software", "ams insurance", "independent agent software"] },
 };
 
 const FEATURE_DB = {
@@ -150,6 +151,12 @@ const FEATURE_DB = {
   "crm": { name: "CRM", desc: "Client relationship management with tags and notes", priority: "should", phase: 1, effort: 3 },
   "questionnaires": { name: "Questionnaires", desc: "Pre-shoot questionnaires to understand client vision", priority: "nice", phase: 2, effort: 2 },
   "donor-management": { name: "Donor Management", desc: "Donor profiles with giving history and engagement", priority: "must", phase: 1, effort: 4 },
+  "policy-management": { name: "Policy Management", desc: "Full policy lifecycle tracking — quotes, binds, endorsements, cancellations — in one place", priority: "must", phase: 1, effort: 5 },
+  "renewal-automation": { name: "Renewal Automation", desc: "Automated renewal pipeline with 90/60/30-day alerts and one-click re-quote across carriers", priority: "must", phase: 1, effort: 3 },
+  "carrier-integration": { name: "Carrier Integration", desc: "Real-time bi-directional data feeds with 300+ carriers for policy downloads and e-docs", priority: "must", phase: 1, effort: 5 },
+  "eo-compliance": { name: "E&O Compliance", desc: "Automated audit trails, required-field enforcement, and timestamped client communication logs", priority: "must", phase: 1, effort: 4 },
+  "producer-licensing": { name: "Producer Licensing", desc: "Track agent license expiry, CE credits, and appointment status by state with auto-alerts", priority: "should", phase: 1, effort: 3 },
+  "document-vault": { name: "Document Vault", desc: "Secure client-facing portal for policy docs, ID cards, and certificates of insurance", priority: "should", phase: 2, effort: 3 },
   "fundraising-campaigns": { name: "Fundraising Campaigns", desc: "Online donation pages with goals and progress", priority: "must", phase: 1, effort: 3 },
   "volunteer-scheduling": { name: "Volunteer Scheduling", desc: "Volunteer sign-ups with shift management", priority: "must", phase: 1, effort: 3 },
   "grant-tracking": { name: "Grant Tracking", desc: "Application deadlines, requirements, and reporting", priority: "should", phase: 1, effort: 3 },
