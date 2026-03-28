@@ -1,0 +1,38 @@
+{
+  "name": "ai-saas-gen",
+  "version": "1.0.0",
+  "description": "Generate a complete vertical SaaS business plan from a niche description. Includes features, pricing, tech stack, competitive analysis, landing page HTML, and deployment guide.",
+  "main": "src/index.js",
+  "bin": {
+    "ai-saas-gen": "src/cli.js"
+  },
+  "keywords": [
+    "saas",
+    "generator",
+    "business-plan",
+    "vertical-saas",
+    "startup",
+    "ai",
+    "niche",
+    "landing-page",
+    "pricing",
+    "tech-stack",
+    "competitive-analysis",
+    "saas-boilerplate"
+  ],
+  "author": "Tool Factory",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurtnebiev-elvis4/ai-saas-gen"
+  },
+  "homepage": "https://tool-factory-prod.web.app/saas-generator/",
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
