@@ -1,0 +1,260 @@
+{
+  "business": {
+    "name": "Vibehub",
+    "niche": "fitness",
+    "tam": "$16.4B",
+    "cagr": "14.8%",
+    "pain": "Class scheduling complexity, membership churn, payment friction",
+    "competitors": [
+      "Mindbody",
+      "Glofox",
+      "Wodify"
+    ],
+    "region": "global",
+    "budget": "seed",
+    "audience": "Small to medium businesses in fitness",
+    "positioning": "Vibehub is the modern, AI-powered fitness management platform that eliminates class scheduling complexity and helps businesses save 10+ hours per week.",
+    "moat": [
+      "Vertical-specific AI trained on fitness data patterns",
+      "All-in-one platform reduces tool sprawl (replaces 3-5 tools)",
+      "Mobile-first design for on-the-go fitness professionals",
+      "Privacy-first: data never sold, GDPR/CCPA compliant"
+    ],
+    "revenueStreams": [
+      {
+        "stream": "SaaS Subscriptions",
+        "pct": "70%",
+        "desc": "Monthly/annual recurring revenue"
+      },
+      {
+        "stream": "Transaction Fees",
+        "pct": "15%",
+        "desc": "Small % on payments processed"
+      },
+      {
+        "stream": "API Access",
+        "pct": "10%",
+        "desc": "Usage-based API for integrations"
+      },
+      {
+        "stream": "Marketplace",
+        "pct": "5%",
+        "desc": "Third-party plugin/integration fees"
+      }
+    ],
+    "kpis": {
+      "targetMRR": "$50K",
+      "targetUsers": "2,000",
+      "churnTarget": "< 5% monthly",
+      "ltv": "$1,200",
+      "cac": "$120"
+    }
+  },
+  "features": [
+    {
+      "name": "Class Scheduling",
+      "desc": "Recurring and drop-in class management with capacity limits",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "class-scheduling"
+    },
+    {
+      "name": "Membership Management",
+      "desc": "Tiered memberships with auto-billing and freeze options",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "membership-management"
+    },
+    {
+      "name": "Workout Tracking",
+      "desc": "Log exercises, sets, reps with progress visualization",
+      "priority": "should",
+      "phase": 2,
+      "effort": 3,
+      "key": "workout-tracking"
+    },
+    {
+      "name": "Payment Processing",
+      "desc": "Stripe/Square integration for subscriptions and one-time payments",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "payment-processing"
+    },
+    {
+      "name": "Trainer Portal",
+      "desc": "Trainers manage their clients, schedules, and programs",
+      "priority": "should",
+      "phase": 2,
+      "effort": 3,
+      "key": "trainer-portal"
+    },
+    {
+      "name": "Progress Photos",
+      "desc": "Side-by-side progress photo comparisons",
+      "priority": "nice",
+      "phase": 2,
+      "effort": 2,
+      "key": "progress-photos"
+    },
+    {
+      "name": "Nutrition Plans",
+      "desc": "Meal planning with macro tracking and grocery lists",
+      "priority": "nice",
+      "phase": 2,
+      "effort": 4,
+      "key": "nutrition-plans"
+    }
+  ],
+  "techStack": {
+    "frontend": "Next.js + Tailwind CSS",
+    "backend": "Node.js + Express",
+    "db": "PostgreSQL (Supabase)",
+    "hosting": "Vercel / Railway",
+    "auth": "NextAuth.js",
+    "payments": "Stripe",
+    "extras": [
+      "Redis (cache)",
+      "Resend (email)",
+      "S3 (storage)"
+    ]
+  },
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "$0",
+      "period": "/forever",
+      "features": [
+        "Up to 100 records",
+        "Core features",
+        "Email support",
+        "2 users"
+      ],
+      "cta": "Start Free"
+    },
+    {
+      "name": "Professional",
+      "price": "$49",
+      "period": "/month",
+      "features": [
+        "Up to 5,000 records",
+        "All features",
+        "Priority support",
+        "10 users",
+        "API access",
+        "Integrations"
+      ],
+      "cta": "Start Free Trial",
+      "highlighted": true
+    },
+    {
+      "name": "Business",
+      "price": "$149",
+      "period": "/month",
+      "features": [
+        "Unlimited records",
+        "All features",
+        "Phone support",
+        "Unlimited users",
+        "SSO",
+        "Custom reports"
+      ],
+      "cta": "Start Free Trial"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "features": [
+        "Everything in Business",
+        "Dedicated support",
+        "SLA guarantee",
+        "On-premise option",
+        "Custom integrations"
+      ],
+      "cta": "Contact Sales"
+    }
+  ],
+  "competitive": {
+    "competitors": [
+      "Mindbody",
+      "Glofox",
+      "Wodify",
+      "Vibehub"
+    ],
+    "rows": [
+      {
+        "feature": "Class Scheduling",
+        "Mindbody": "partial",
+        "Glofox": "no",
+        "Wodify": "no",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "Membership Management",
+        "Mindbody": "partial",
+        "Glofox": "no",
+        "Wodify": "full",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "Workout Tracking",
+        "Mindbody": "full",
+        "Glofox": "partial",
+        "Wodify": "full",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "Payment Processing",
+        "Mindbody": "full",
+        "Glofox": "partial",
+        "Wodify": "partial",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "Trainer Portal",
+        "Mindbody": "no",
+        "Glofox": "full",
+        "Wodify": "full",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "Progress Photos",
+        "Mindbody": "no",
+        "Glofox": "no",
+        "Wodify": "no",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "AI-Powered Insights",
+        "Mindbody": "no",
+        "Glofox": "no",
+        "Wodify": "no",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "No-Code Customization",
+        "Mindbody": "no",
+        "Glofox": "no",
+        "Wodify": "no",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "Privacy-First (No Data Selling)",
+        "Mindbody": "partial",
+        "Glofox": "no",
+        "Wodify": "no",
+        "Vibehub": "full"
+      },
+      {
+        "feature": "Mobile-First UX",
+        "Mindbody": "no",
+        "Glofox": "no",
+        "Wodify": "no",
+        "Vibehub": "full"
+      }
+    ]
+  }
+}

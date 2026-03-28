@@ -1,0 +1,260 @@
+{
+  "business": {
+    "name": "Wavekit",
+    "niche": "real estate",
+    "tam": "$12.8B",
+    "cagr": "12.1%",
+    "pain": "Lead management chaos, slow document processing, poor client communication",
+    "competitors": [
+      "Follow Up Boss",
+      "kvCORE",
+      "LionDesk"
+    ],
+    "region": "global",
+    "budget": "seed",
+    "audience": "Small to medium businesses in real estate",
+    "positioning": "Wavekit is the modern, AI-powered real estate management platform that eliminates lead management chaos and helps businesses save 10+ hours per week.",
+    "moat": [
+      "Vertical-specific AI trained on real estate data patterns",
+      "All-in-one platform reduces tool sprawl (replaces 3-5 tools)",
+      "Mobile-first design for on-the-go real estate professionals",
+      "Privacy-first: data never sold, GDPR/CCPA compliant"
+    ],
+    "revenueStreams": [
+      {
+        "stream": "SaaS Subscriptions",
+        "pct": "70%",
+        "desc": "Monthly/annual recurring revenue"
+      },
+      {
+        "stream": "Transaction Fees",
+        "pct": "15%",
+        "desc": "Small % on payments processed"
+      },
+      {
+        "stream": "API Access",
+        "pct": "10%",
+        "desc": "Usage-based API for integrations"
+      },
+      {
+        "stream": "Marketplace",
+        "pct": "5%",
+        "desc": "Third-party plugin/integration fees"
+      }
+    ],
+    "kpis": {
+      "targetMRR": "$50K",
+      "targetUsers": "2,000",
+      "churnTarget": "< 5% monthly",
+      "ltv": "$1,200",
+      "cac": "$120"
+    }
+  },
+  "features": [
+    {
+      "name": "Lead CRM",
+      "desc": "Capture, score, and nurture leads through the pipeline",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "crm-leads"
+    },
+    {
+      "name": "Property Listings",
+      "desc": "MLS-integrated listing management with rich media",
+      "priority": "must",
+      "phase": 1,
+      "effort": 5,
+      "key": "property-listings"
+    },
+    {
+      "name": "Document Automation",
+      "desc": "Auto-generate contracts, disclosures, and forms",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "document-automation"
+    },
+    {
+      "name": "E-Signatures",
+      "desc": "Legally binding electronic signatures on all documents",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "e-signatures"
+    },
+    {
+      "name": "Client Portal",
+      "desc": "Self-serve portal for documents, status, and communication",
+      "priority": "should",
+      "phase": 1,
+      "effort": 3,
+      "key": "client-portal"
+    },
+    {
+      "name": "Market Analytics",
+      "desc": "Comparable sales analysis and market trend reports",
+      "priority": "should",
+      "phase": 2,
+      "effort": 5,
+      "key": "market-analytics"
+    },
+    {
+      "name": "Commission Tracking",
+      "desc": "Automated commission splits and payout calculations",
+      "priority": "should",
+      "phase": 2,
+      "effort": 3,
+      "key": "commission-tracking"
+    }
+  ],
+  "techStack": {
+    "frontend": "Next.js + Tailwind CSS",
+    "backend": "Node.js + Express",
+    "db": "PostgreSQL (Supabase)",
+    "hosting": "Vercel / Railway",
+    "auth": "NextAuth.js",
+    "payments": "Stripe",
+    "extras": [
+      "Redis (cache)",
+      "Resend (email)",
+      "S3 (storage)"
+    ]
+  },
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "$0",
+      "period": "/forever",
+      "features": [
+        "Up to 100 records",
+        "Core features",
+        "Email support",
+        "2 users"
+      ],
+      "cta": "Start Free"
+    },
+    {
+      "name": "Professional",
+      "price": "$49",
+      "period": "/month",
+      "features": [
+        "Up to 5,000 records",
+        "All features",
+        "Priority support",
+        "10 users",
+        "API access",
+        "Integrations"
+      ],
+      "cta": "Start Free Trial",
+      "highlighted": true
+    },
+    {
+      "name": "Business",
+      "price": "$149",
+      "period": "/month",
+      "features": [
+        "Unlimited records",
+        "All features",
+        "Phone support",
+        "Unlimited users",
+        "SSO",
+        "Custom reports"
+      ],
+      "cta": "Start Free Trial"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "features": [
+        "Everything in Business",
+        "Dedicated support",
+        "SLA guarantee",
+        "On-premise option",
+        "Custom integrations"
+      ],
+      "cta": "Contact Sales"
+    }
+  ],
+  "competitive": {
+    "competitors": [
+      "Follow Up Boss",
+      "kvCORE",
+      "LionDesk",
+      "Wavekit"
+    ],
+    "rows": [
+      {
+        "feature": "Lead CRM",
+        "Follow Up Boss": "no",
+        "kvCORE": "partial",
+        "LionDesk": "no",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "Property Listings",
+        "Follow Up Boss": "no",
+        "kvCORE": "no",
+        "LionDesk": "full",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "Document Automation",
+        "Follow Up Boss": "no",
+        "kvCORE": "full",
+        "LionDesk": "full",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "E-Signatures",
+        "Follow Up Boss": "no",
+        "kvCORE": "full",
+        "LionDesk": "full",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "Client Portal",
+        "Follow Up Boss": "partial",
+        "kvCORE": "no",
+        "LionDesk": "full",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "Market Analytics",
+        "Follow Up Boss": "full",
+        "kvCORE": "no",
+        "LionDesk": "full",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "AI-Powered Insights",
+        "Follow Up Boss": "no",
+        "kvCORE": "no",
+        "LionDesk": "partial",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "No-Code Customization",
+        "Follow Up Boss": "no",
+        "kvCORE": "partial",
+        "LionDesk": "no",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "Privacy-First (No Data Selling)",
+        "Follow Up Boss": "no",
+        "kvCORE": "no",
+        "LionDesk": "no",
+        "Wavekit": "full"
+      },
+      {
+        "feature": "Mobile-First UX",
+        "Follow Up Boss": "no",
+        "kvCORE": "partial",
+        "LionDesk": "no",
+        "Wavekit": "full"
+      }
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "business": {
+    "name": "Syncdeck",
+    "niche": "pet grooming",
+    "tam": "$14.5B",
+    "cagr": "6.2%",
+    "pain": "Manual scheduling, no-show clients, paper records",
+    "competitors": [
+      "Gingr",
+      "PetExec",
+      "DaySmart Pet"
+    ],
+    "region": "global",
+    "budget": "seed",
+    "audience": "Small to medium businesses in pet grooming",
+    "positioning": "Syncdeck is the modern, AI-powered pet grooming management platform that eliminates manual scheduling and helps businesses save 10+ hours per week.",
+    "moat": [
+      "Vertical-specific AI trained on pet grooming data patterns",
+      "All-in-one platform reduces tool sprawl (replaces 3-5 tools)",
+      "Mobile-first design for on-the-go pet grooming professionals",
+      "Privacy-first: data never sold, GDPR/CCPA compliant"
+    ],
+    "revenueStreams": [
+      {
+        "stream": "SaaS Subscriptions",
+        "pct": "70%",
+        "desc": "Monthly/annual recurring revenue"
+      },
+      {
+        "stream": "Transaction Fees",
+        "pct": "15%",
+        "desc": "Small % on payments processed"
+      },
+      {
+        "stream": "API Access",
+        "pct": "10%",
+        "desc": "Usage-based API for integrations"
+      },
+      {
+        "stream": "Marketplace",
+        "pct": "5%",
+        "desc": "Third-party plugin/integration fees"
+      }
+    ],
+    "kpis": {
+      "targetMRR": "$50K",
+      "targetUsers": "2,000",
+      "churnTarget": "< 5% monthly",
+      "ltv": "$1,200",
+      "cac": "$120"
+    }
+  },
+  "features": [
+    {
+      "name": "Online Booking",
+      "desc": "Self-serve appointment scheduling with real-time availability",
+      "priority": "must",
+      "phase": 1,
+      "effort": 3,
+      "key": "online-booking"
+    },
+    {
+      "name": "Client & Pet Profiles",
+      "desc": "Detailed profiles with history, preferences, allergies, photos",
+      "priority": "must",
+      "phase": 1,
+      "effort": 2,
+      "key": "client-pet-profiles"
+    },
+    {
+      "name": "Staff Scheduling",
+      "desc": "Drag-and-drop schedule management with conflict detection",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "groomer-scheduling"
+    },
+    {
+      "name": "Automated Reminders",
+      "desc": "SMS/email reminders to reduce no-shows by up to 40%",
+      "priority": "must",
+      "phase": 1,
+      "effort": 2,
+      "key": "automated-reminders"
+    },
+    {
+      "name": "Before/After Gallery",
+      "desc": "Photo documentation of work with client sharing",
+      "priority": "should",
+      "phase": 2,
+      "effort": 2,
+      "key": "photo-gallery"
+    },
+    {
+      "name": "Loyalty Program",
+      "desc": "Points-based rewards system to boost retention",
+      "priority": "nice",
+      "phase": 2,
+      "effort": 3,
+      "key": "loyalty-program"
+    },
+    {
+      "name": "POS Integration",
+      "desc": "Accept payments in-person and online with receipt generation",
+      "priority": "must",
+      "phase": 1,
+      "effort": 4,
+      "key": "pos-integration"
+    }
+  ],
+  "techStack": {
+    "frontend": "Next.js + Tailwind CSS",
+    "backend": "Node.js + Express",
+    "db": "PostgreSQL (Supabase)",
+    "hosting": "Vercel / Railway",
+    "auth": "NextAuth.js",
+    "payments": "Stripe",
+    "extras": [
+      "Redis (cache)",
+      "Resend (email)",
+      "S3 (storage)"
+    ]
+  },
+  "pricing": [
+    {
+      "name": "Starter",
+      "price": "$0",
+      "period": "/forever",
+      "features": [
+        "Up to 100 records",
+        "Core features",
+        "Email support",
+        "2 users"
+      ],
+      "cta": "Start Free"
+    },
+    {
+      "name": "Professional",
+      "price": "$49",
+      "period": "/month",
+      "features": [
+        "Up to 5,000 records",
+        "All features",
+        "Priority support",
+        "10 users",
+        "API access",
+        "Integrations"
+      ],
+      "cta": "Start Free Trial",
+      "highlighted": true
+    },
+    {
+      "name": "Business",
+      "price": "$149",
+      "period": "/month",
+      "features": [
+        "Unlimited records",
+        "All features",
+        "Phone support",
+        "Unlimited users",
+        "SSO",
+        "Custom reports"
+      ],
+      "cta": "Start Free Trial"
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "features": [
+        "Everything in Business",
+        "Dedicated support",
+        "SLA guarantee",
+        "On-premise option",
+        "Custom integrations"
+      ],
+      "cta": "Contact Sales"
+    }
+  ],
+  "competitive": {
+    "competitors": [
+      "Gingr",
+      "PetExec",
+      "DaySmart Pet",
+      "Syncdeck"
+    ],
+    "rows": [
+      {
+        "feature": "Online Booking",
+        "Gingr": "partial",
+        "PetExec": "full",
+        "DaySmart Pet": "partial",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "Client & Pet Profiles",
+        "Gingr": "partial",
+        "PetExec": "full",
+        "DaySmart Pet": "full",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "Staff Scheduling",
+        "Gingr": "full",
+        "PetExec": "no",
+        "DaySmart Pet": "full",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "Automated Reminders",
+        "Gingr": "full",
+        "PetExec": "no",
+        "DaySmart Pet": "full",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "Before/After Gallery",
+        "Gingr": "no",
+        "PetExec": "partial",
+        "DaySmart Pet": "no",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "Loyalty Program",
+        "Gingr": "no",
+        "PetExec": "no",
+        "DaySmart Pet": "no",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "AI-Powered Insights",
+        "Gingr": "partial",
+        "PetExec": "partial",
+        "DaySmart Pet": "no",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "No-Code Customization",
+        "Gingr": "no",
+        "PetExec": "no",
+        "DaySmart Pet": "no",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "Privacy-First (No Data Selling)",
+        "Gingr": "no",
+        "PetExec": "partial",
+        "DaySmart Pet": "no",
+        "Syncdeck": "full"
+      },
+      {
+        "feature": "Mobile-First UX",
+        "Gingr": "partial",
+        "PetExec": "partial",
+        "DaySmart Pet": "no",
+        "Syncdeck": "full"
+      }
+    ]
+  }
+}

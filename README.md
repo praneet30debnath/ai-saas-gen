@@ -33,42 +33,74 @@ From a single niche input, you get a **complete SaaS business plan**:
 | **Competitive Analysis** | Feature comparison matrix vs real industry incumbents |
 | **Landing Page** | Ready-to-deploy HTML landing page |
 | **Deploy Guide** | Step-by-step deployment instructions |
-| **Financial Projections** | 5-year revenue/cost model with unit economics |
+| **Markdown Report** | Complete business plan as a shareable document |
 
 ## Demo
 
 ```
 $ npx ai-saas-gen "dental"
 
-  ╔══════════════════════════════════════════════╗
-  ║  Corepad — AI-Powered Dental Management      ║
-  ╚══════════════════════════════════════════════╝
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Aurapad — dental SaaS Business Plan
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  Market:  $3.7B (11.4% CAGR)
-  Problem: Insurance claim complexity, appointment no-shows
-  Moat:    Vertical AI + All-in-one platform + HIPAA-first
+EXECUTIVE SUMMARY
+  Aurapad is the modern, AI-powered dental management
+  platform that eliminates insurance claim complexity
+  and helps businesses save 10+ hours per week.
 
-  Features (12):
-    MUST-HAVE    Smart Scheduling         Phase 1   2 weeks
-    MUST-HAVE    Insurance Auto-Claims    Phase 1   3 weeks
-    SHOULD-HAVE  Patient Portal           Phase 2   2 weeks
-    ...
+MARKET
+  TAM: $3.7B  |  CAGR: 11.4%  |  Region: global
 
-  Pricing:
-    Free     $0/mo    Up to 50 patients, basic scheduling
-    Pro      $49/mo   Unlimited, insurance integration, API
-    Business $129/mo  Multi-location, analytics, priority support
+THE PROBLEM
+  Insurance claim complexity, appointment no-shows,
+  patient records fragmentation
 
-  Competitors: Dentrix, Open Dental, CareStack
-  ✓ Feature matrix generated (12 features x 4 competitors)
-  ✓ Landing page generated (1,847 lines)
-  ✓ Deploy guide generated
+COMPETITORS
+  Dentrix  |  Open Dental  |  CareStack
+
+FEATURES (7 total)
+  [MUST]   Smart Scheduling        Phase 1  Effort 3/5
+  [MUST]   Patient Records         Phase 1  Effort 4/5
+  [MUST]   Insurance Auto-Claims   Phase 1  Effort 4/5
+  [MUST]   Automated Reminders     Phase 1  Effort 2/5
+  [SHOULD] Treatment Plans         Phase 2  Effort 3/5
+  [NICE]   Patient Portal          Phase 2  Effort 3/5
+  [MUST]   Billing & Payments      Phase 1  Effort 4/5
+
+PRICING
+  Starter       $0/forever
+  Professional  $49/month    ★ RECOMMENDED
+  Business      $149/month
+  Enterprise    Custom
+
+KEY METRICS
+  Target MRR:   $50K
+  Target Users: 2,000
+  LTV:          $1,200
+  CAC:          $120
+
+✓ Saved to dental-saas-plan/
+  plan.json       — Business plan data
+  plan.md         — Markdown document
+  landing.html    — Landing page
+  deploy-guide.md — Deployment guide
 ```
+
+## Examples
+
+Check the [`examples/`](examples/) directory for complete generated outputs:
+
+| Niche | Business Plan | Landing Page |
+|-------|--------------|--------------|
+| [Pet Grooming](examples/pet-grooming/) | [plan.md](examples/pet-grooming/plan.md) | [landing.html](examples/pet-grooming/landing.html) |
+| [Fitness](examples/fitness/) | [plan.md](examples/fitness/plan.md) | [landing.html](examples/fitness/landing.html) |
+| [Real Estate](examples/real-estate/) | [plan.md](examples/real-estate/plan.md) | [landing.html](examples/real-estate/landing.html) |
 
 ## 25 Built-In Industries
 
 <details>
-<summary>Click to expand full list</summary>
+<summary>Click to expand full list with market data</summary>
 
 | Industry | Market Size | CAGR | Key Pain Point |
 |----------|------------|------|----------------|
@@ -78,51 +110,58 @@ $ npx ai-saas-gen "dental"
 | Dental | $3.7B | 11.4% | Insurance claims, no-shows |
 | Restaurant | $7.2B | 15.3% | Order management, inventory waste |
 | Legal | $1.8B | 9.7% | Time tracking, document chaos |
-| Education | $21.6B | 18.2% | Student engagement, progress tracking |
-| Healthcare | $28.5B | 13.6% | Patient scheduling, EHR complexity |
-| Construction | $10.3B | 11.8% | Project delays, budget overruns |
-| Salon | $1.3B | 8.5% | Double bookings, client retention |
-| Accounting | $18.3B | 8.6% | Data entry errors, tax deadlines |
-| Logistics | $8.9B | 17.4% | Route inefficiency, shipment visibility |
-| Agriculture | $4.1B | 12.9% | Crop monitoring, weather dependency |
-| Recruiting | $3.2B | 10.3% | Resume screening overload |
-| Event Management | $6.4B | 11.1% | Ticket sales, vendor coordination |
-| Property Management | $5.6B | 9.8% | Rent collection, maintenance chaos |
-| Veterinary | $1.9B | 10.7% | Patient records, inventory |
-| Auto Repair | $2.1B | 7.9% | Estimate accuracy, parts ordering |
-| Photography | $0.8B | 6.1% | Gallery management, booking |
-| Nonprofit | $3.4B | 9.2% | Donor management, fundraising |
-| Cleaning Services | $2.4B | 8.1% | Booking, quality consistency |
-| Therapy | $5.8B | 13.2% | Session notes, insurance billing |
-| Church/Ministry | $1.2B | 5.4% | Member engagement, donations |
-| E-Commerce | $6.3B | 16.7% | Inventory sync, abandoned carts |
-| Home Services | $3.8B | 11.5% | Lead management, scheduling |
+| Education | $8.3B | 16.1% | Student engagement, grading |
+| Healthcare | $15.6B | 13.2% | Patient records, compliance |
+| Construction | $2.1B | 10.5% | Project delays, budget overruns |
+| Salon | $6.9B | 7.8% | Appointment booking, inventory |
+| Accounting | $3.2B | 8.9% | Manual reconciliation, tax prep |
+| Logistics | $4.8B | 12.7% | Route optimization, tracking |
+| Agriculture | $1.9B | 14.2% | Crop monitoring, market access |
+| Recruiting | $5.4B | 11.8% | Resume screening, pipeline tracking |
+| Event Management | $3.6B | 13.4% | Vendor coordination, budgeting |
+| Property Management | $2.8B | 9.3% | Tenant communication, maintenance |
+| Veterinary | $2.4B | 8.1% | Records management, scheduling |
+| Auto Repair | $1.7B | 6.8% | Work orders, parts inventory |
+| Photography | $1.2B | 7.4% | Client gallery, booking |
+| Nonprofit | $2.1B | 10.2% | Donor management, impact tracking |
+| Cleaning Services | $1.4B | 8.6% | Job scheduling, quality control |
+| Therapy | $4.2B | 15.6% | Session notes, HIPAA compliance |
+| Church/Ministry | $1.1B | 5.4% | Member engagement, donations |
+| E-Commerce | $18.7B | 17.3% | Inventory sync, multi-channel |
+| Home Services | $3.8B | 11.1% | Dispatching, customer management |
 
 </details>
 
 **Any niche works** — unknown niches get smart defaults based on market patterns.
 
-## Installation
+## vs. Alternatives
+
+| Feature | ai-saas-gen | ChatGPT | VentureKit | LivePlan |
+|---------|:-----------:|:-------:|:----------:|:--------:|
+| Price | **Free** | $20/mo | $29/mo | $20/mo |
+| Offline | **Yes** | No | No | No |
+| Landing Page | **Generated** | No | No | No |
+| Deploy Guide | **Included** | No | No | No |
+| Industry Data | **25 verticals** | Generic | Generic | Generic |
+| Tech Stack | **Specific** | Vague | No | No |
+| Competitive Matrix | **Auto** | Manual | Partial | No |
+| Feature Roadmap | **Phased** | Unstructured | Basic | No |
+| API | **Yes** | API separate | No | No |
+| Privacy | **100% local** | Cloud | Cloud | Cloud |
+
+## Quick Start
 
 ```bash
-# Use directly (no install)
-npx ai-saas-gen "your niche"
+# Pretty terminal output
+npx ai-saas-gen "pet grooming"
 
-# Or install globally
-npm i -g ai-saas-gen
-
-# Or install from GitHub
-npm i -g github:kurtnebiev-elvis4/ai-saas-gen
+# List all known industries
+npx ai-saas-gen --list
 ```
-
-## Usage
 
 ### Output Formats
 
 ```bash
-# Pretty terminal output (default)
-npx ai-saas-gen "dental"
-
 # JSON (pipe to jq, use in scripts)
 npx ai-saas-gen "dental" --json
 
@@ -160,10 +199,10 @@ my-logistics-saas/
 | `-f, --format` | Format: `pretty`, `json`, `markdown`, `html` | `pretty` |
 | `-l, --list` | List all known verticals | |
 
-### Examples
+### Advanced Examples
 
 ```bash
-# Funded startup targeting enterprise
+# Funded startup targeting enterprise in the US
 npx ai-saas-gen "logistics" -b funded -a "Enterprise shippers" -r us
 
 # Bootstrap with custom problem statement
@@ -180,7 +219,7 @@ const { generate, listVerticals } = require('ai-saas-gen');
 
 const plan = generate('dental', { budget: 'seed', region: 'us' });
 
-console.log(plan.business.name);     // "Nexusfy"
+console.log(plan.business.name);     // "Aurapad"
 console.log(plan.business.tam);      // "$3.7B"
 console.log(plan.features);          // [{name, desc, priority, phase, effort}, ...]
 console.log(plan.techStack);         // {frontend, backend, db, hosting, auth, payments}
@@ -188,42 +227,33 @@ console.log(plan.pricing);           // [{name, price, period, features}, ...]
 console.log(plan.competitive);       // {competitors, rows}
 console.log(plan.landingHTML);       // Full HTML string
 console.log(plan.markdown);          // Full Markdown document
+console.log(plan.deployGuide);       // Deployment instructions
 
 const verticals = listVerticals();   // [{name, market, cagr, pain, competitors}, ...]
 ```
 
-## Why This Exists
+## Who Is This For?
 
-There are AI business plan generators ($10-50/mo). There are SaaS boilerplates. But there's **nothing that combines vertical SaaS business intelligence with instant, offline generation** of a complete plan + landing page + deploy guide.
+- **Founders** exploring vertical SaaS opportunities before committing
+- **Indie hackers** validating niche ideas in minutes, not weeks
+- **Agencies** pitching vertical SaaS solutions to clients
+- **Hackathon teams** who need a business plan in 5 minutes
+- **Investors** doing quick market sizing on vertical niches
 
-| | ai-saas-gen | ChatGPT | VentureKit ($29/mo) | LivePlan ($20/mo) |
-|---|---|---|---|---|
-| Vertical SaaS focus | Yes | No | No | No |
-| Real market data | 25 industries | Hallucinated | Generic | Generic |
-| Landing page output | Yes | No | No | No |
-| Works offline | Yes | No | No | No |
-| Price | Free | $20/mo | $29/mo | $20/mo |
-| Open source | Yes | No | No | No |
+## Why Zero Dependencies?
 
-**Built for:**
-- Founders exploring niche SaaS ideas
-- Indie hackers validating before building
-- Agencies pitching vertical SaaS to clients
-- Hackathon teams needing a business plan in 5 minutes
+No API keys. No accounts. No network requests. No build step.
 
-## Zero Dependencies
-
-No API keys. No accounts. No network requests. Runs entirely locally using a curated knowledge base of 25 industry verticals with real market data.
-
-## Web Version
-
-Don't want to use the CLI? Try the full web app with interactive UI, financial projections, and more:
-
-**[tool-factory-prod.web.app/saas-generator](https://tool-factory-prod.web.app/saas-generator/)**
+Everything runs locally using a curated knowledge base of 25 industry verticals with real market data (TAM, CAGR, competitors, pain points). Your data never leaves your machine.
 
 ## Contributing
 
-PRs welcome. To add a new industry vertical, edit `src/data.js` and add an entry to the `VERTICALS` object.
+PRs welcome! To add a new industry vertical:
+
+1. Fork the repo
+2. Add your vertical data to `src/data.js`
+3. Include: market size, CAGR, pain points, competitors, features
+4. Submit a PR
 
 ## License
 
